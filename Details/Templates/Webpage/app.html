@@ -1,0 +1,13 @@
+{% block content %}
+    <h1></h1>
+    {% for event in app %}
+        <strong> {{ event }}</strong>
+    <ul>
+        <li>URl: {{event.site}}</li>
+        <li>Xpath: {{event.xpath}}</li>
+        <li>Data: {{event.data}}</li>
+        <li>Time: {{event.creation_time}}</li>
+    </ul>
+    {% endfor %}
+    {{ app }}
+{% endblock %}
